@@ -41,7 +41,10 @@ export default function Layout({ children, page }) {
 				<ul className='pt-10 pb-4 flex justify-around text-yellow-300 '>
 					<li>A propos</li>
 					<li>Qui sommes-nous</li>
-					<li>Terence_Hdl</li>
+					<a href='https://www.linkedin.com/in/t%C3%A9rence-hild%C3%A9ral-757125186'>
+						{' '}
+						<li>Terence_Hdl</li>{' '}
+					</a>
 				</ul>
 			</footer>
 		</div>
