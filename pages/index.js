@@ -5,19 +5,21 @@ import Layout from '../components/Layout';
 export default function Home({ res }) {
 	return (
 		<Layout page='Crypto Tracker - Accueil'>
-			<ul className='flex justify-around py-10'>
+			<ul className='justify-around  py-10 md:flex '>
 				{res.map((crypto, index) => (
 					<li
 						key={index}
-						className='relative hover:shadow-md p-8 border border-yellow-300 rounded-3xl bg-white md:w-auto flex-1 mx-5'
+						className='relative hover:bg-yellow-100
+						p-8 border border-yellow-300 rounded-3xl
+						bg-gray-100 md:w-auto flex-1 mx-5 my-5'
 					>
 						<Link href={`${crypto.id}`}>
 							<a className='rounded-md'>
-								<div className='text-center'>
+								<div className='text-center '>
 									<img
 										src={crypto.logo_url}
 										alt={crypto.name}
-										className='w-20 h-20 mx-auto mb-6'
+										className='w-20 h-20 mx-auto mb-6 '
 									/>
 								</div>
 								<h2 className='text-2xl mb-6 uppercase tracking-wider'>
