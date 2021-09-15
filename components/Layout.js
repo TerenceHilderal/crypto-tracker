@@ -29,7 +29,7 @@ export default function Layout({ children, page }) {
 
 			<main className='pt-4 mx-20 '>{children}</main>
 
-			<footer className='bottom-0 '>
+			<footer className=''>
 				<Image
 					src='/crypto.webp'
 					alt='footer-pic'

@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 export default function Home({ res }) {
 	return (
 		<Layout page='Crypto Tracker - Accueil'>
-			<ul className='justify-around  py-10 md:flex '>
+			<ul className=' py-10 md:flex '>
 				{res.map((crypto, index) => (
 					<li
 						key={index}
